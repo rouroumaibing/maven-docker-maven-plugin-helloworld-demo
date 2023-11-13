@@ -3,6 +3,7 @@ TAG=${1:-3.9.5}
 
 #install java
 yum install -y java java-devel docker
+systemctl enable docker
 
 #install maven
 wget https://dlcdn.apache.org/maven/maven-3/${TAG}/binaries/apache-maven-${TAG}-bin.tar.gz
